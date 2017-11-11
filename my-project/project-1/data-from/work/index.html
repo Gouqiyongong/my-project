@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>数智通</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="src/fullPage/jquery.fullpage.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- 下面两个文件只能使用CDN，放在本地不起作用 -->
+  <!--[if lt IE 9]>
+  <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ht-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="#">
+          <img class="ht-logo-icon" src="img/logo.png" alt="Brand">
+          <img class="ht-logo-text" src="img/datath.png" alt="Brand">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="ht-navbar-collapse">
+        <ul class="nav navbar-nav" id="ht-pages">
+          <li data-menuanchor="pages-1" class="active"><a href="#pages-1">事件分析</a></li>
+          <li data-menuanchor="pages-2"><a href="#pages-2">平台介绍</a></li>
+          <li data-menuanchor="pages-3"><a href="#pages-3">团队介绍</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div id="fullpage">
+      <div class="lazy section active" id="ht-pages-1">
+        <section class="ht-event-link">
+          <div class="ht-inner">
+            <h1>事件分析</h1>
+            <p>事件分析指的是对文本中情感的倾向性和评价对象进行提取的过程。结合自主开发的半监督学习技术。</p>
+            <a class="btn" href="event.html"><img src="img/enter.png" alt=""></a>
+          </div>
+        </section>
+      </div>
+      <div class="section" id="ht-pages-2">
+        <section class="ht-event-link">
+          <div class="ht-inner">
+            <h1>平台介绍</h1>
+            <p>平台介绍是对文本中情感的倾向性和评价对象进行提取的过程。玻森NLP情感引擎提供行业领先的篇章级情感分析。</p>
+            <a class="btn" href="platform.html"><img src="img/enter.png" alt=""></a>
+          </div>
+        </section>
+      </div>
+      <div class="section" id="ht-pages-3">
+        <section class="ht-event-link">
+          <div class="ht-inner">
+            <h1>团队介绍</h1>
+            <p>事件分析指的是对文本中情感的倾向性和评价对象进行提取的过程。结合自主开发的半监督学习技术。</p>
+            <a class="btn" href="teamintorduction.html"><img src="img/enter.png" alt=""></a>
+          </div>
+        </section>
+      </div>
+      <!-- .fp-auto-height这个类一般处理底部信息部分，设置高度不再是全屏而是适应内容 -->
+      <footer class="section fp-auto-height">
+        <div class="bottom">
+          <div class="links">
+            <ul class="clearfix">
+              <li>商务合作</li>
+              <li>隐私保护</li>
+              <li>联系我们</li>
+              <li>投诉建议</li>
+            </ul>
+          </div>
+          <div class="phone">客服电话: 028-1234567</div>
+          <div class="cy">
+            &copy;2014-2018 CINS版权所有，并保留所有权利。
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <!--不要动下面的三个文件-->
+  <!--可以使用CDN加速，"//cdn.bootcss.com/fullPage.js/2.9.2/"-->
+  <script src="src/fullPage/jquery.easings.min.js"></script>
+  <script src="src/fullPage/scrolloverflow.min.js"></script>
+  <script src="src/fullPage/jquery.fullpage.min.js"></script>
+  <!--懒加载插件lazyload-->
+  <script src="js/jquery.lazyload.min.js"></script>
+  <script>
+    /*fullpage相关设置*/
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        'anchors': ['pages-1', 'pages-2', 'pages-3', 'footer'],
+        'menu': '#ht-pages',
+        'css3': true,
+        'scrollingSpeed': 800,
+        'verticalCentered': true,
+        'navigation': true,
+        'slidesColor': ['#F0F2F4', '#fff', '#fff', '#fff'],
+        'navigationTooltips': ['event study', 'odl', 'team introduction']
+      });
+    });
+  </script>
+  <!--lazyload相关处理-->
+  <script type="text/javascript">
+    $(function () {
+      $("div.lazy").lazyload({
+        placeholder :"img/h1-b1.png",
+        effect:"fadeIn"
+      });
+    });
+  </script>
+</body>
+
+</html>

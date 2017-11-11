@@ -1,0 +1,10 @@
+@import "signup.css";
+@import "index.css";
+
+body{
+  background-image: none;
+}
+
+.ht-signup>div:first-child{
+  min-height: 80px;
+}

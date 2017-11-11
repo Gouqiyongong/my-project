@@ -1,0 +1,99 @@
+html {
+  padding-top: 75px;
+}
+
+.container .ht-class-btn {
+  margin: 20px 0 20px -15px;
+}
+
+.container .ht-class-btn .ht-event-tag {
+  padding: 3px 3px 3px 0;
+  margin-left: 16px;
+  font-size: 22px;
+  font-weight: 400;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.container .ht-class-btn .active {
+  border-bottom: 2px solid;
+  color: rgb(53, 247, 247);
+}
+
+.container .ht-event-list .ht-event-type-pic {
+  margin-bottom: 20px;
+  width: 300px;
+  height: 200px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.container .ht-event-list .ht-event-type-pic img {
+  float: left;
+  width: 50%;
+}
+
+.container .ht-event-list .ht-event-type-pic a {
+  display: block;
+  width: 200%;
+}
+
+.container .ht-event-list {
+  margin-bottom: 25px;
+}
+
+@media (min-width: 1600px) {
+  .container {
+    width: 1440px;
+  }
+  .container .ht-event-list .ht-event-type-pic {
+    width: 460px;
+    height: 270px;
+  }
+}
+
+@media (min-width: 992px) and (max-width:1600px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container .ht-class-btn {
+    margin: 20px 0;
+  }
+  .container .ht-class-btn .ht-event-tag {
+    margin-right: 20px;
+    font-size: 18px;
+  }
+  .container .ht-event-list .ht-event-type-pic {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.ht-link-list {
+  border-bottom: 1px solid #999;
+  font-size: 18px;
+  color: #333;
+}
+
+.ht-list-group {
+  display: table;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+.ht-list-group li {
+  display: table-cell;
+  width: 80px;
+  height: 27px;
+  line-height: 27px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.ht-list-group li a {
+  color: #999;
+}
