@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>事件分析</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/eventContent.css">
+
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ht-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <img class="ht-logo-icon" src="img/logo.png" alt="Brand">
+        <img class="ht-logo-text" src="img/datath.png" alt="Brand">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="ht-navbar-collapse">
+      <ul class="nav navbar-nav" id="ht-pages">
+        <li data-menuanchor="pages-1" class="active"><a href="event.html">事件分析</a></li>
+        <li data-menuanchor="pages-2"><a href="platform.html">平台介绍</a></li>
+        <li data-menuanchor="pages-3"><a href="inline.html">在线演示</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="ht-eventcontent-nav" id="ht-event-nav">
+    <ul class="nav nav-pills">
+      <li role="presentation" class="active" index="1"><a href="#社会">社会</a></li>
+      <li role="presentation" index="2"><a href="#时政">时政</a></li>
+      <li role="presentation" index="3"><a href="#财经">财经</a></li>
+      <li role="presentation" index="4"><a href="#娱乐">娱乐</a></li>
+      <li role="presentation" index="5"><a href="#体育">体育</a></li>
+    </ul>
+  </div>
+
+  <div class="ht-event-content" id="ht-event" style="min-height: 450px">
+  </div>
+
+  <!--分页-->
+  <div class="ht-pagination">
+    <div id="ht-pagination">
+      <ul class="pagination" id="pagination">
+        <li class="pre"  id="pre"><span>&laquo;</span></li>
+        <li class="active" data-index = 0><span>1</span></li>
+        <li data-index = 1><span>2</span></li>
+        <li data-index = 2><span>3</span></li>
+        <li data-index = 3><span>4</span></li>
+        <li data-index = 4><span>5</span></li>
+        <li class="next" id="next" data-index = ><span>&raquo;</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="bottom">
+    <div class="links">
+      <ul class="clearfix">
+        <li>商务合作</li>
+        <li>隐私保护</li>
+        <li>联系我们</li>
+        <li>投诉建议</li>
+      </ul>
+    </div>
+    <div class="phone">客服电话: 028-1234567</div>
+    <div class="cy">
+      &copy;2014-2018 CINS版权所有，并保留所有权利。
+    </div>
+  </div>
+</footer>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/gauge.js"></script>
+<script src="js/ejs.js"></script>
+<script id="list" type="text/template">
+  <% if (datas.length){ %>
+  <% for(var i=0; i < datas.length ; i++){ %>
+  <div class="item" id="<%=datas[i].id%>">
+    <!--<span class="ht-force-number"><i><%=datas[i].inf%></i></span>-->
+    <a href="#" target="_self"><img src="<%=datas[i].picture%>" onerror="this.src = 'img/e/u135.jpeg'">
+      <p class="ht-event-describe">
+        <span class="ht-mt"><%=datas[i].title%></span><br/>
+        <span><%=datas[i].time%></span>
+      </p>
+      <div class="ht-event-influence" id="ht-event-influence-<%=datas[i].index%>"></div>
+    </a>
+  </div>
+  <% } %>
+  <% } %>
+</script>
+<script src="js/loadData.js"></script>
+<script src="js/eventcontent.js"></script>
+<script>
+  //还原用户操作
+  var ind = parseInt(localStorage.getItem("key")) - 1;
+  var li = document.getElementById("ht-event-nav").getElementsByTagName("li");
+  if(typeof ind == "number" && ind > 0 && ind <= 4){
+      li[0].className = "";
+      li[ind].className = "active";
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>数智通</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_analysis.css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- 下面两个文件只能使用CDN，放在本地不起作用 -->
+  <!--[if lt IE 9]>
+  <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ht-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <img class="ht-logo-icon" src="img/logo.png" alt="Brand">
+        <img class="ht-logo-text" src="img/datath.png" alt="Brand">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="ht-navbar-collapse">
+      <ul class="nav navbar-nav" id="ht-pages">
+        <li data-menuanchor="pages-1" class="active"><a href="#">事件分析</a></li>
+        <li data-menuanchor="pages-2"><a href="platform.html">平台介绍</a></li>
+        <li data-menuanchor="pages-3"><a href="teamintorduction.html">团队介绍</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="ht-to-comment" id="ht-to-comment">
+  <a href="#" class="btn btn-info" role="button">舆情分析</a>
+</div>
+<div class="container clearfix">
+  <div class="ht-top">
+    <h1 id="ht-top">习近平出席经济论坛开幕式 <span class="glyphicon glyphicon-question-sign"></span></h1>
+    <!--<p class="ht-time" id="ht-time">2017.1.15-2017.1.18</p>-->
+  </div>
+  <div class=" ht-chart-left">
+    <div class="clearfix">
+      <div class="ht-gauge" id="ht-gauge-hot"></div>
+      <div class="ht-gauge" id="ht-gauge-influ"></div>
+    </div>
+    <div class="ht-tag">
+      <h3><small><span class="glyphicon glyphicon-tags"></span></small>&nbsp; 标签</h3>
+      <p id="tag">军事 外交部 南海</p>
+    </div>
+    <div class="ht-chart-left-source">
+      <div class="ht-source">
+        <h3><small><span class="glyphicon glyphicon-link"></span></small>&nbsp; 事件来源</h3>
+        <p id="media">网易</p>
+      </div>
+      <div class="ht-source">
+        <h3><small><span class="glyphicon glyphicon-link"></span></small>&nbsp; 事件时间</h3>
+        <p id="time">2017</p>
+      </div>
+      <div class="ht-source">
+        <h3><small><span class="glyphicon glyphicon-link"></span></small>&nbsp; 事件人物</h3>
+        <p id="people">习近平、张良</p>
+      </div>
+      <div class="ht-source">
+        <h3><small><span class="glyphicon glyphicon-link"></span></small>&nbsp; 事件地点</h3>
+        <p id="event">北京、西安、上海、杭州、成都</p>
+      </div>
+    </div>
+
+    <div class="ht-likes">
+      <h3><small><span class="glyphicon glyphicon-duplicate"></span></small>&nbsp; 同类事件</h3>
+      <p id="relative"></p>
+    </div>
+  </div>
+  <div class="ht-line" id="ht-line"></div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/gauge.js"></script>
+<script src="js/line.js"></script>
+<script src="js/analysisData.js"></script>
+<script>
+  $(function () {
+    var arg = location.search.slice(1);
+    $("#ht-to-comment").find($("a")).click(function (event) {
+      $(this).attr("href","analysis_sentiment.html?" + arg);
+    });
+  })
+</script>
+</body>
+
+</html>

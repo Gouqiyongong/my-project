@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="高德地图,百度地图API，高德地图自定义工具，高德地图所见即所得工具" />
+  <meta name="description" content="高德地图API自定义地图，帮助用户在可视化操作下生成高德地图" />
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no"><!--禁止用户缩放地图-->
+  <title>高德地图API自定义地图</title>
+  <!--引用高德地图API-->
+  <style type="text/css">
+    html,body{margin:0;padding:0;}
+    #mapContent{top:-20px;left:-20px;width: 600px;height: 400px;}
+  </style>
+</head>
+
+<body>
+<!--高德地图容器-->
+<div id="mapContent"></div>
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=e3faa12cf3691f59a0db6e4134f3f7b8"></script>
+<!--引入高德地图API，使用自己的key-->
+<script type="text/javascript">
+  var map = new AMap.Map('mapContent',{//创建地图，并初始化
+    resizeEnable: true,
+    zoom: 8,//地图级别
+    center: [104.185025,30.826655]//中心点位置
+  });
+  var marker = new AMap.Marker({//添加覆盖物点标记marker
+    position: [104.185025,30.826655],//marker所在的位置
+    label:{content: '<div class="info-title">地址：成都市新都区新都大道8号<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;明理楼B511<br/>电话：+86&nbsp;28&nbsp;83385301<br/>传真：+86&nbsp;28&nbsp;83385302</div>',
+      offset: new AMap.Pixel(-175, -64)},
+    map:map//创建时直接赋予map属性
+  });
+</script>
+</body>
+</html>
