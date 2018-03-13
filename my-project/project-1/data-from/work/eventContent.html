@@ -31,7 +31,7 @@
       <ul class="nav navbar-nav" id="ht-pages">
         <li data-menuanchor="pages-1" class="active"><a href="event.html">事件分析</a></li>
         <li data-menuanchor="pages-2"><a href="platform.html">平台介绍</a></li>
-        <li data-menuanchor="pages-3"><a href="teamintorduction.html">团队介绍</a></li>
+        <li data-menuanchor="pages-3"><a href="inline.html">在线演示</a></li>
       </ul>
     </div>
   </div>
@@ -91,7 +91,7 @@
   <% for(var i=0; i < datas.length ; i++){ %>
   <div class="item" id="<%=datas[i].id%>">
     <!--<span class="ht-force-number"><i><%=datas[i].inf%></i></span>-->
-    <a href="#"><img src="<%=datas[i].picture%>" onerror="this.src = 'img/e/u135.jpeg'">
+    <a href="#" target="_self"><img src="<%=datas[i].picture%>" onerror="this.src = 'img/e/u135.jpeg'">
       <p class="ht-event-describe">
         <span class="ht-mt"><%=datas[i].title%></span><br/>
         <span><%=datas[i].time%></span>
@@ -105,6 +105,7 @@
 <script src="js/loadData.js"></script>
 <script src="js/eventcontent.js"></script>
 <script>
+  //还原用户操作
   var ind = parseInt(localStorage.getItem("key")) - 1;
   var li = document.getElementById("ht-event-nav").getElementsByTagName("li");
   if(typeof ind == "number" && ind > 0 && ind <= 4){

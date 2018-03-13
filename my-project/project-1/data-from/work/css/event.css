@@ -46,27 +46,28 @@ html {
   display: flex;
   padding: 0;
   list-style: none;
-  width:100%;
+  width: 100%;
 }
 
 .hot-word .item {
   flex: 1;
   margin: 5px 15px;
   text-align: center;
-  background: rgb(83,98,112);
+  background: rgb(83, 98, 112);
 }
 
 @media (min-width: 1600px) {
   .container {
     width: 1440px;
   }
+
   .container .ht-event-list .ht-event-type-pic {
     width: 460px;
     height: 270px;
   }
 }
 
-@media (min-width: 992px) and (max-width:1600px) {
+@media (min-width: 992px) and (max-width: 1600px) {
   .container {
     width: 970px;
   }
@@ -76,14 +77,17 @@ html {
   .container .ht-class-btn {
     margin: 20px 0;
   }
+
   .container .ht-class-btn .ht-event-tag {
     margin-right: 20px;
     font-size: 18px;
   }
+
   .container .ht-event-list .ht-event-type-pic {
     max-width: 100%;
     height: auto;
   }
+
   .hot-word .item {
     margin: 5px 10px;
     font-size: 12px;
@@ -94,6 +98,7 @@ html {
   .hot-word {
     flex-wrap: wrap;
   }
+
   .hot-word .item {
     flex: 0 1 46px;
     margin: 5px 2px;

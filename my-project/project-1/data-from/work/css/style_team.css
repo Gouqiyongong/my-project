@@ -1,6 +1,6 @@
 html {
-   padding-top: 105px;
- }
+  padding-top: 105px;
+}
 
 .ht-cl:after {
   display: block;
@@ -285,13 +285,13 @@ html {
   height: 180px;
 }
 
-.ht-friend{
+.ht-friend {
   width: 100%;
 }
 
-.ht-friend>div{
+.ht-friend > div {
   display: inline-block;
-  margin:0 2% 2% 0;
+  margin: 0 2% 2% 0;
   box-shadow: 2px 2px 2px 2px #eeeeee;
   width: 17.5%;
 }

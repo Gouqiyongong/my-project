@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>在线演示</title>
   <!-- Bootstrap -->
+  <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.js" charset="UTF-8"></script>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!--<link rel="stylesheet" href="src/fullPage/jquery.fullpage.css">-->
   <link rel="stylesheet" href="css/style.css">
@@ -34,89 +37,55 @@
       <ul class="nav navbar-nav" id="ht-pages">
         <li data-menuanchor="pages-1"><a href="event.html">事件分析</a></li>
         <li data-menuanchor="pages-2"><a href="platform.html">平台介绍</a></li>
-        <li data-menuanchor="pages-3" class="active"><a href="#">团队介绍</a></li>
+        <li data-menuanchor="pages-3" class="active"><a href="#">在线演示</a></li>
       </ul>
     </div>
   </div>
 </nav>
 <div class="container">
   <div class="ht-text">
-    <textarea class="ht-textarea" maxlength="200"></textarea>
-    <p>测试版目前只允许输入200个字符</p>
+    <textarea class="ht-textarea" id="ht-textarea" maxlength="200">当年山奴亚国王为了听故事的结尾，就把杀山鲁佐德的日期延迟了一天又一天。宰相的山鲁佐德每天讲一个故事，她的故事无穷无尽，一个比一个精彩，一直讲到第一千零一夜，终于感动了国王。山努亚说：凭安拉的名义起誓，我决心不杀你了，你的故事让我感动。我将把这些故事记录下来，永远保存。”如今有故事的人快到一千个了，有故事的人作为一个世间百态的平台，你可以从中看到尘世间芸芸众生的沸腾挣扎，为了七情六欲而奋力拼搏，收获几缕风光，大部分时候还是吃一嘴灰，真无奈啊。谁都渴望奇迹发生，就像山鲁佐德在一千个夜里的祈祷，西西弗斯渴望石头伫立在山顶，我们都希望生命中的故事不会变成事故，每天都凝固在美好发生的一瞬间，为此我们日夜努力不停息，就为了一千个日夜后，能够看见更坚硬的土地和更美好的自己。</textarea>
+    <p>测试版目前只允许输入200个字符，敲击“回车”可得到分析结果</p>
   </div>
-  <div class="ht-cixing-1">
+  <div class="ht-cixing-1" id="ht-1">
     <h1>词性标注</h1>
-    <div>
-      <span  class="ht-cixing-1-1">庆祝</span>
-      &nbsp;&nbsp;
-      <span  class="ht-cixing-1-1">庆祝</span>
-      &nbsp;&nbsp;
-      <span  class="ht-cixing-1-1">庆祝</span>
-      &nbsp;&nbsp;
-      <span>
-        庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;
-        庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;
-        庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;
-        庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;
-        庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;
-        庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;
-        庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;
-        庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;
-        庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;
-        庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;
-        庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;
-        庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;
-        庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;
-        庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;
-        庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;
-        庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;庆祝&nbsp;&nbsp;
-      </span>
+    <div id="ht-word">
+      <span  class="ht-cixing-1-n">庆祝</span>
+      <span  class="ht-cixing-1-n">庆祝</span>
+      <span  class="ht-cixing-1-n">庆祝</span>
+      <span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span>
+      <span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span>
+      <span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span>
+      <span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span>
+      <span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span>
+      <span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span>
     </div>
-    <ul>
-    <li class="ht-cixing-1-1">名词</li>
-    <li class="ht-cixing-1-2">形容词</li>
-    <li class="ht-cixing-1-3">副词</li>
-    <li class="ht-cixing-1-4">动词</li>
-  </ul>
+    <ul id="ht-cixing">
+    </ul>
   </div>
-  <div class="ht-cixing-2">
-    <h1>词性标注</h1>
-      <ul>
-        <li>
-          <span>地名</span>
-          <p><span>庆祝</span><span>庆祝</span><span>庆祝</span></p>
-        </li>
-        <li>
-          <span>地名</span>
-          <p><span>庆祝</span><span>庆祝</span><span>庆祝</span></p>
-        </li>
-        <li>
-          <span>地名</span>
-          <p><span>庆祝</span><span>庆祝</span><span>庆祝</span></p>
-        </li>
-      </ul>
-  </div>
-  <div class="ht-cixing-3">
+  <div class="ht-cixing-3" id="ht-3">
     <h1>情感分析</h1>
-    <div >
+    <div>
       <div class="ht-qinggan-zheng">
-        <img>
-        <p><span>20%</span>正面</p>
+        <p><span id="ht-qinggan-zheng-w">20%</span>&nbsp;&nbsp;正面</p>
+        <img src="img/c/zheng.png">
       </div>
       <div class="ht-qinggan-fu">
-        <img>
-        <p><span>20%</span>负面</p>
+        <img src="img/c/fu.png">
+        <p><span id="ht-qinggan-fu-w">20%</span>&nbsp;&nbsp;负面</p>
       </div>
       <div id="ht-qinggan" class="ht-qinggan">
         <div id="ht-qinggan-zheng"></div><div id="ht-qinggan-fu"></div>
       </div>
     </div>
   </div>
-  <div class="ht-cixing-4">
+  <div class="ht-cixing-4" id="ht-4">
     <h1>摘要&关键词提取</h1>
     <div>
-      <textarea class="ht-text-zhaiyao" id="ht-text-zhaiyao"></textarea>
-      <p>
+      <div class="ht-text-zhaiyao">
+        <span id="ht-text-zhaiyao">摘要提取</span>
+      </div>
+      <p  id="ht-text-guanjian">
         <span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span><span>庆祝</span>
       </p>
     </div>
@@ -138,5 +107,7 @@
     </div>
   </div>
 </footer>
+
+<script src="js/inline.js"></script>
 </body>
 </html>

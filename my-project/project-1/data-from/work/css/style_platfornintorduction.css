@@ -17,7 +17,6 @@ html {
   height: 340px;
 }
 
-
 /*栅格系统垂直居中*/
 
 .ht-pt-content .row .center-vertical {
@@ -33,7 +32,7 @@ html {
 .ht-pt-content .row .center-vertical h2 {
   margin-top: 0;
   color: #333;
-	font-weight: 600;
+  font-weight: 600;
 }
 
 .ht-pt-content .row .center-vertical p {
@@ -47,16 +46,17 @@ html {
 }
 
 @media (min-width: 475px) and (max-width: 768px) {
-	.ht-pt-content .row .center-vertical h2 {
-		font-size: 24px;
-	}
+  .ht-pt-content .row .center-vertical h2 {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 475px) {
-	.ht-pt-content .row .center-vertical h2 {
-		font-size: 18px;
-	}
-	.ht-pt-content .row .center-vertical p {
-		font-size: 12px;
-	}
+  .ht-pt-content .row .center-vertical h2 {
+    font-size: 18px;
+  }
+
+  .ht-pt-content .row .center-vertical p {
+    font-size: 12px;
+  }
 }

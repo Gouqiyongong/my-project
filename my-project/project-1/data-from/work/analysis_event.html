@@ -37,7 +37,7 @@
       <ul class="nav navbar-nav" id="ht-pages">
         <li data-menuanchor="pages-1" class="active"><a href="event.html">事件分析</a></li>
         <li data-menuanchor="pages-2"><a href="platform.html">平台介绍</a></li>
-        <li data-menuanchor="pages-3"><a href="teamintorduction.html">团队介绍</a></li>
+        <li data-menuanchor="pages-3"><a href="inline.html">在线演示</a></li>
       </ul>
     </div>
   </div>
@@ -47,7 +47,6 @@
   <div class="ht-analysis-container">
     <div class="ht-chart-left">
       <div class="clearfix ht-hot-f">
-        <a href="platform.html">
           <div class="ht-gauge">
             <span>热度</span>
             <span id="ht-hot">78</span>
@@ -55,14 +54,13 @@
               <div id="ht-gauge-hot"></div>
             </div>
           </div>
-        </a>
-        <a href="platform.html#influnce"><div class="ht-gauge">
+        <div class="ht-gauge">
           <span>影响力</span>
           <span id="ht-influnce">78</span>
           <div>
             <div id="ht-gauge-influ"></div>
           </div>
-        </div></a>
+        </div>
       </div>
       <div>
         <div class="ht-tag">
@@ -114,35 +112,30 @@
       <div class="ht-line" id="ht-line"></div>
     </div>
   </div>
-  <div class="clearfix">
-    <!--<div class="ht-top">
-      <h1 id="ht-top">舆情分析</h1>
+  <div class="ht-analysis-container">
+    <div class="ht-chart-pia">
+      <div class="ht-pia" id="ht-pia"></div>
     </div>
-    <div class="ht-to-comment" id="ht-to-comment">
-      <a href="#" class="btn btn-info" role="button">事件分析</a>
-    </div>-->
-    <div class="ht-analysis-container">
-      <div class="ht-chart-pia">
-        <div class="ht-pia" id="ht-pia"></div>
-      </div>
-      <div class="ht-chart-right">
-        <div class="ht-cloud" id="ht-cloud"></div>
-      </div>
-      <div class="ht-word">
-        <h3>热点评论</h3>
-        <ul>
-          <li>
-            <p id="zheng">
-              暂无相关评论
-            </p>
-          </li><li>
-            <p id="fu">
-              暂无相关评论
-            </p>
-        </li>
-        </ul>
-      </div>
+    <div class="ht-chart-right">
+      <div class="ht-cloud" id="ht-cloud"></div>
     </div>
+    <div class="ht-word">
+      <h3>热点评论</h3>
+      <ul>
+        <li>
+          <p id="zheng">
+            暂无相关评论
+          </p>
+        </li><li>
+          <p id="fu">
+            暂无相关评论
+          </p>
+      </li>
+      </ul>
+    </div>
+    <div class="ht-newword">
+     <div id="ht-newword"></div>
+   </div>
   </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -155,13 +148,14 @@
 <script src="js/cloud.js"></script>
 <script src="js/pia.js"></script>
 <script src="js/line.js"></script>
+<script  src="js/line-word.js" type="text/javascript"></script>
 <script src="js/sentimentData.js"></script>
 <script>
   $(function () {
     $("#back").click(function (event) {
       location.href = "http://101.204.243.86:9000/eventContent.html?type/%E7%A4%BE%E4%BC%9A/1";
     });
-  })
+  });
 </script>
 </body>
 

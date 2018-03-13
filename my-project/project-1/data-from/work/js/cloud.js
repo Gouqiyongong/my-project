@@ -1,7 +1,4 @@
-/**
- * Created by ale on 2017/2/9.
- */
-function cloud(ele,data,val) {
+function cloud(ele, data, val) {
   var myChart = echarts.init(ele);
   var newData = [];
   newData.push({
@@ -16,10 +13,10 @@ function cloud(ele,data,val) {
       }
     }
   });
-  for(var i = 1,len = data.length;i < len;i++){
+  for (var i = 1, len = data.length; i < len; i++) {
     newData.push({
-      name:data[i],
-      value:val[i]
+      name: data[i],
+      value: val[i]
     })
   }
   var option = {
@@ -29,27 +26,27 @@ function cloud(ele,data,val) {
     tooltip: {
       show: true
     },
-    series:  [{
+    series: [{
       type: 'wordCloud',
-      gridSize:20,
+      gridSize: 20,
       //sizeRange: [12, 55],
-      textRotation:[0,45,90],
+      textRotation: [0, 45, 90],
       //rotationRange: [0, 90],
-      center:['30%','50%'],
-      x:'left',
+      center: ['30%', '50%'],
+      x: 'left',
       size: ['70%', '70%'],
-      autoSize:{
+      autoSize: {
         enable: true,
         minSize: 12
       },
       textStyle: {
         normal: {
-          color: function() {
+          color: function () {
             return 'rgb(' + [
-                  Math.round(Math.random() * 200),
-                  Math.round(Math.random() * 200),
-                  Math.round(Math.random() * 200)
-                ].join(',') + ')';
+                Math.round(Math.random() * 200),
+                Math.round(Math.random() * 200),
+                Math.round(Math.random() * 200)
+              ].join(',') + ')';
           }
         },
         emphasis: {
@@ -62,9 +59,9 @@ function cloud(ele,data,val) {
   };
   myChart.setOption(option);
   // 使图标可以自动计算区域大小
-  window.addEventListener("resize",function(){
+  window.addEventListener("resize", function () {
     setTimeout(function () {
       myChart.resize();
-    },7)
+    }, 0)
   });
 }

@@ -36,7 +36,7 @@
       <ul class="nav navbar-nav" id="ht-pages">
         <li class="active"><a href="#">事件分析</a></li>
         <li><a href="platform.html">平台介绍</a></li>
-        <li><a href="teamintorduction.html">团队介绍</a></li>
+        <li><a href="inline.html">在线演示</a></li>
       </ul>
     </div>
   </div>
@@ -49,35 +49,35 @@
   <div class="ht-event-list row">
     <div class="col-md-4 col-sm-6 col-xs-6">
       <div class="ht-event-type-pic">
-        <a href="type/社会" target="_blank" index="1">
+        <a href="type/社会" target="_self" index="1">
           <img class="event-type" src="img/e/sheh.jpg">
         </a>
       </div>
     </div>
     <div class="col-md-4 col-sm-6 col-xs-6">
       <div class="ht-event-type-pic">
-        <a href="type/时政" target="_blank" index="2">
+        <a href="type/时政" target="_self" index="2">
           <img class="event-type" src="img/e/sz.jpg">
         </a>
       </div>
     </div>
     <div class="col-md-4 col-sm-6 col-xs-6">
       <div class="ht-event-type-pic">
-        <a href="type/财经" target="_blank" index="3">
+        <a href="type/财经" target="_self" index="3">
           <img class="event-type" src="img/e/cj.jpg">
         </a>
       </div>
     </div>
     <div class="col-md-4 col-sm-6 col-xs-6">
       <div class="ht-event-type-pic">
-        <a href="type/娱乐" target="_blank" index="4">
+        <a href="type/娱乐" target="_self" index="4">
           <img class="event-type" src="img/e/yl.jpg">
         </a>
       </div>
     </div>
     <div class="col-md-4 col-sm-6 col-xs-6">
       <div class="ht-event-type-pic">
-        <a href="type/体育" target="_blank" index="5">
+        <a href="type/体育" target="_self" index="5">
           <img class="event-type" src="img/e/ty.jpg">
         </a>
       </div>
@@ -131,30 +131,6 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/event.js"></script>
 <script src="js/wordhot.js"></script>
-<script>
-  $(".ht-event-list").find("a").click(function () {
-    if($(this).attr("index")){
-      localStorage.setItem("key",$(this).attr("index"));
-      localStorage.setItem("ye",1);
-      localStorage.setItem("index",0);
-    }
-  })
-  function hrefAdd(Class) {
-    $.fn.eventJs();
-    $(function () {
-      var $parent = Class;
-      var $target = $parent.find("a");
-      $target.each(function () {
-        var $href = $(this).attr("href");
-        $(this).click(function (event) {
-          $(this).attr("href", "eventContent.html?" + $href + "/1");
-        });
-        $(this).attr("href", $href);
-      })
-    });
-  }
-  hrefAdd($(".ht-event-list"));
-</script>
 </body>
 
 </html>

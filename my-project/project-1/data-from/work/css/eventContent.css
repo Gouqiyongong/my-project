@@ -2,7 +2,7 @@ html {
   padding-top: 80px;
 }
 
-.ht-event-describe{
+.ht-event-describe {
   height: 25px;
   -webkit-transition: height .5s;
   -moz-transition: height .5s;
@@ -11,12 +11,13 @@ html {
   transition: height .5s;
 }
 
-.item:hover .ht-event-describe{
+.item:hover .ht-event-describe {
   height: 66px;
 }
-.ht-mt{
+
+.ht-mt {
   display: inline-block;
-  width:100%;
+  width: 100%;
   height: 40px;
   overflow: hidden;
 }
@@ -38,6 +39,7 @@ html {
   .ht-event-content {
     justify-content: center;
   }
+
   .ht-eventcontent-nav ul li {
     display: inline-block;
     width: 50px;
@@ -81,10 +83,11 @@ html {
   margin: 0 auto;
 }
 
-.ht-pagination span{
+.ht-pagination span {
   cursor: pointer;
 }
-.ht-event-influence{
+
+.ht-event-influence {
   position: absolute;
   top: -70px;
   right: 0px;
@@ -97,6 +100,23 @@ html {
   transition: top .5s;
 }
 
-.item:hover .ht-event-influence{
-  top:0px;
+.item:hover .ht-event-influence {
+  top: 0px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 87%;
+  }
+
+  .ht-event-content .item {
+    margin: 0.5%;
+    width: 19%;
+  }
+
+  .ht-event-content img {
+    width: 100%;
+    height: 140px;
+  }
+
 }

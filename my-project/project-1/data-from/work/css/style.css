@@ -4,7 +4,11 @@
 }
 
 .html {
-    font-family: "微软雅黑";
+  font-family: "微软雅黑";
+}
+
+html,body,.container-fluid{
+  height: 100%;
 }
 
 .clearfix {
@@ -43,11 +47,11 @@
   transition: all 0.5s;
 }
 
-.navbar>.container-fluid .navbar-brand {
+.navbar > .container-fluid .navbar-brand {
   margin-left: 5px;
 }
 
-.navbar-default .navbar-nav>li>a.navbar-brand {
+.navbar-default .navbar-nav > li > a.navbar-brand {
   padding: 0;
   line-height: 70px;
 }
@@ -66,18 +70,18 @@
   width: 150px;
 }
 
-.navbar-default .navbar-nav>li {
+.navbar-default .navbar-nav > li {
   padding: 0 30px;
 }
 
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   box-sizing: border-box;
   border-bottom: 2px solid #0cf;
   color: #e2e2e2;
   background-color: transparent;
 }
 
-.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
   height: 72px;
   line-height: 42px;
   font-size: 16px;
@@ -95,12 +99,13 @@
     height: 50px;
   }
 
-  .navbar-default .navbar-nav>li>a, .navbar-default:hover .navbar-nav>li>a {
+  .navbar-default .navbar-nav > li > a, .navbar-default:hover .navbar-nav > li > a {
     height: 50px;
     line-height: 30px;
     text-align: center;
   }
-  .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, nav.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, nav.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     text-align: center;
     border: 0;
     border-radius: 4px;
@@ -115,6 +120,10 @@
 
 .navbar-default .container-fluid {
   padding: 0 20px;
+}
+
+.container-fluid #fullpage {
+  height: 100%;
 }
 
 .container-fluid #fullpage .section {
@@ -143,17 +152,8 @@
 }
 
 #ht-pages-1 {
-  background: url("../img/h-b1.png");
+  background: url("../img/h-b1.jpg");
 }
-
-#ht-pages-2 {
-  background: url("../img/h-b2.png");
-}
-
-#ht-pages-3 {
-  background: url("../img/h-b3.png");
-}
-
 
 /*设置首页导航点样式*/
 
@@ -195,6 +195,7 @@
 #fullpage .ht-event-link a img {
   height: 25px;
 }
+
 /*
 @media screen and (min-width: 435px) and (max-width: 767px) {
   #fullpage .ht-event-link h1 {
@@ -218,6 +219,7 @@
   #fullpage .ht-event-link h1 {
     font-size: 2.6rem;
   }
+
   #fullpage .ht-event-link p {
     font-size: 1.4rem;
   }
