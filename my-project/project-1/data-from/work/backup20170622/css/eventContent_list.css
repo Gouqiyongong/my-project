@@ -1,0 +1,38 @@
+@media (min-width: 1200px) {
+  #ht-event-new-list{
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 569px;
+    overflow: hidden;
+    background: #ffffff;
+  }
+
+  #ht-event-new-list ul{
+    width: 100%;
+    list-style-type: none;
+  }
+
+  #ht-event-new-list ul li{
+    margin-bottom: 40px;
+    width: 100%;
+    line-height: 36px;
+    text-align: center;
+    word-break: break-all;
+  }
+  #ht-event-new-list a{
+    position:absolute;
+    text-decoration:none;
+    color: #3b3b3b;
+  }
+
+  #ht-event-new-list a:hover{
+    color: #000000;
+  }
+}
+
+@media (max-width: 1200px) {
+  #ht-event-new-list{
+    display: none;
+  }
+}

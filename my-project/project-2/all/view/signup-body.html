@@ -1,0 +1,103 @@
+<div class="container">
+  <header>
+    <h1>欢迎注册FTF</h1>
+    <p>用我的面孔，打动你的心</p>
+  </header>
+  <div>
+    <form class="form-horizontal ht-signup">
+      <div>
+        <div class="control-group">
+          <label class="control-label" for="inputUser">用户名</label>
+          <div class="controls">
+            <input type="text" name="userName" class="require" id="inputUser">
+          </div>
+        </div><div class="control-group">
+        <label class="control-label" for="inputEmail">邮箱</label>
+        <div class="controls">
+          <input type="text" name="email" class="require" id="inputEmail">
+        </div>
+      </div><div class="control-group">
+        <label class="control-label" for="inputPassword">密码</label>
+        <div class="controls">
+          <input type="passWord" name="passWord" class="require" id="inputPassword">
+        </div>
+      </div><div class="control-group">
+        <label class="control-label" for="inputPassword-2">确认密码
+        </label>
+        <div class="controls">
+          <input type="password" name="confirmPassword" class="require" id="inputPassword-2">
+        </div>
+      </div>
+      </div>
+      <div class="control-group ht-gender">
+        <label class="control-label">性别</label>
+        <div class="controls ">
+          <label class="radio">
+            <input type="radio" name="gender" id="ht-man" value="0" checked>
+            <span>男</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="gender" id="ht-woman" value="1">
+            <span>女</span>
+          </label>
+        </div>
+      </div>
+
+      <!--<div class="control-group">
+        <label class="control-label" for="age">age</label>
+        <div class="controls">
+          <input type="number" name="age" class="require" id="age" placeholder="age">
+        </div>
+      </div>-->
+      <div class="ht-interst" id="ht-interest">
+        <label>你的兴趣是？</label>
+        <div>
+          <label class="checkbox inline">
+            <input type="checkbox" name="popMusic" id="inlineCheckbox1" value="1"> 流行音乐
+          </label>
+          <label class="checkbox inline">
+            <input type="checkbox" name="classicalMusic" id="inlineCheckbox2" value="1"> 古典音乐
+          </label>
+          <label class="checkbox inline">
+            <input type="checkbox" name="networkNovel" id="inlineCheckbox3" value="1"> 网络小说
+          </label>
+          <label class="checkbox inline">
+            <input type="checkbox" name="classicBook" id="inlineCheckbox4" value="1"> 经典书籍
+          </label>
+          <label class="checkbox inline">
+            <input type="checkbox" name="film" id="inlineCheckbox5" value="1"> 电影
+          </label>
+          <label class="checkbox inline">
+            <input type="checkbox" name="teleplay" id="inlineCheckbox6" value="1"> 电视剧
+          </label>
+          <label class="checkbox inline">
+            <input type="checkbox" name="quadraticElement" id="inlineCheckbox7" value="1"> 二次元
+          </label>
+          <label class="checkbox inline">
+            <input type="checkbox" name="networkGame" id="inlineCheckbox8" value="1"> 网络游戏
+          </label>
+          <label class="checkbox inline">
+            <input type="checkbox" name="standAloneGame" id="inlineCheckbox9" value="1"> 单机游戏
+          </label>
+        </div>
+      </div>
+      <div class="controls ht-btn">
+        <button type="submit" id="submit">注册</button>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- 以下是注册邮箱验证界面 -->
+<div class="ht-yanzheng" id="ht-yanzheng-go">
+  <div>
+    <span>已将验证码发送至您的邮箱，请注意查收,验证码于十五分钟内有效</span>
+    <div>
+      <span>请输入验证码</span>
+      <input type="text" id="ht-yanzheng" maxlength="4" autofocus>
+      <button value="确认" id="ht-yanzheng-sure">确认</button>
+    </div>
+    <div>
+      <button id="ht-newyanzheng"> 点击发送验证码 </button>
+    </div>
+  </div>
+</div>

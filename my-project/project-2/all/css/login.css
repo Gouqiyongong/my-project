@@ -1,0 +1,72 @@
+body{
+  padding: 0;
+  background: url("../img/load-bg-1.jpg") no-repeat;
+  background-size: cover;
+}
+
+.ht-load-to{
+  width: 100%;
+  height: 100%;
+}
+
+.ht-load-to>header{
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+}
+
+.ht-load-to>header>span>img{
+//width: 60px;
+//height: 60px;
+}
+
+
+
+.ht-load-to>header>span:last-child{
+  margin: 10px;
+  float: right;
+}
+
+.ht-load-to-load{
+  margin: 270px auto 0 auto;
+  width: 40%;
+  min-width: 500px;
+  min-height: 200px;
+  text-align: center;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.ht-load-to-load>h1{
+  margin: 20px auto;
+  width: 100%;
+  height: 48px;
+  font-size: 60px;
+}
+
+.ht-load-to-load button{
+  margin: 40px auto 10px auto;
+  border-radius: 35px;
+  border: 3px solid #ffffff;
+  width: 50%;
+  height: 50px;
+  cursor: pointer;
+  line-height: 40px;
+  font-size: 30px;
+  color: #ffffff;
+  background: none;
+}
+
+.ht-load-to-load button:hover{
+  background: rgba(204,204,204,0.40);
+  border: 5px solid rgba(255, 255, 255, 0.8);
+  color: rgba(255,255,255,0.8);
+}
+
+.ht-load-to-load a{
+  text-decoration: none;
+}
+
+.ht-load-to-load>p{
+  font-size: 16px;
+}
