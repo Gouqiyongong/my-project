@@ -1,0 +1,267 @@
+@font-face {
+  font-family: "YaheiLight";
+  src: url("../fonts/Microsoft-Yahei-UI-Light.ttc") format('TrueType Collection');
+}
+
+.html {
+  font-family: "微软雅黑";
+}
+
+html,body,.container-fluid{
+  height: 100%;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix::after {
+  content: "";
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.ht-back {
+  position: absolute;
+  top: 90px;
+  left: 50px;
+  font-size: 22px;
+  color: #999;
+  cursor: pointer;
+}
+
+.ht-back:hover {
+  color: #333;
+}
+
+.navbar-default {
+  margin-bottom: 0;
+  border-bottom: none;
+  height: 73px;
+  font-weight: 600;
+  background: rgba(0, 19, 30, 0.65);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.navbar > .container-fluid .navbar-brand {
+  margin-left: 5px;
+}
+
+.navbar-default .navbar-nav > li > a.navbar-brand {
+  padding: 0;
+  line-height: 70px;
+}
+
+.navbar-default .navbar-brand .ht-logo-icon {
+  display: inline-block;
+  margin-top: -4px;
+  margin-right: 5px;
+  width: 24px;
+  height: 32px;
+}
+
+.navbar-default .navbar-brand .ht-logo-text {
+  display: inline-block;
+  margin-right: 30px;
+  width: 150px;
+}
+
+.navbar-default .navbar-nav > li {
+  padding: 0 10px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  box-sizing: border-box;
+  border-bottom: 2px solid #0cf;
+  color: #e2e2e2;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
+  height: 72px;
+  line-height: 42px;
+  font-size: 16px;
+  font-weight: lighter;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  nav.navbar-default .container-fluid {
+    padding: 0 15px;
+    background: rgba(0, 0, 0, 0.65);
+  }
+
+  nav.navbar-default .container-fluid li {
+    height: 50px;
+  }
+
+  .navbar-default .navbar-nav > li > a, .navbar-default:hover .navbar-nav > li > a {
+    height: 50px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, nav.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    text-align: center;
+    border: 0;
+    border-radius: 4px;
+    background-color: #0cf;
+    color: #fff;
+  }
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.navbar-default .container-fluid {
+  padding: 0 20px;
+}
+
+.container-fluid #fullpage {
+  height: 100%;
+}
+
+.container-fluid #fullpage .section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-origin: border-box;
+}
+
+.navbar-default .navbar-toggle {
+  margin-top: 20px;
+  border: 0;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  width: 28px;
+  height: 2px;
+  background-color: #eee;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+#ht-pages-1 {
+  background: url("../img/h-b1.webp");
+}
+
+#ht-pages-2 {
+  background: url("../img/h-b2.webp");
+}
+
+#ht-pages-3 {
+  background: url("../img/h-b3.webp");
+}
+
+#ht-pages-4 {
+  background: url("../img/h-b4.webp");
+}
+
+/*设置首页导航点样式*/
+
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+  background: #ccc;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: #fff;
+}
+
+#fullpage .ht-event-link {
+  margin: 0 auto;
+  width: 90%;
+  text-align: left;
+  color: #fff;
+  font-family: "YaheiLight";
+}
+
+.ht-inner {
+  float: right;
+  width: 33%;
+}
+
+#fullpage .ht-event-link h1 {
+  font-size: 2.6rem;
+}
+
+#fullpage .ht-event-link .btn {
+  padding: 0;
+}
+
+#fullpage .ht-event-link p {
+  margin-top: 30px;
+  font-size: 1.6rem;
+  line-height: 30px;
+}
+
+#fullpage .ht-event-link a img {
+  height: 25px;
+}
+
+/*
+@media screen and (min-width: 435px) and (max-width: 767px) {
+  #fullpage .ht-event-link h1 {
+    font-size: 3.8rem;
+  }
+  #fullpage .ht-event-link p {
+    font-size: 1.8rem;
+  }
+}*/
+
+@media (max-width: 435px) {
+  #fp-nav ul li a span, .fp-slidesNav ul li a span {
+    display: none;
+  }
+
+  #fullpage .ht-event-link .ht-inner {
+    width: 100%;
+    text-align: center;
+  }
+
+  #fullpage .ht-event-link h1 {
+    font-size: 2.6rem;
+  }
+
+  #fullpage .ht-event-link p {
+    font-size: 1.4rem;
+  }
+}
+
+#fullpage footer .bottom, footer .bottom {
+  padding: 20px;
+  color: #fff;
+  background: #283546;
+  font-size: 12px;
+}
+
+#fullpage footer .bottom .links ul, footer .bottom .links ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 240px;
+  text-align: center;
+  list-style: none;
+}
+
+#fullpage footer .bottom .links ul li, footer .bottom .links ul li {
+  float: left;
+  width: 60px;
+}
+
+#fullpage footer .bottom .phone, footer .bottom .phone {
+  margin: 5px 0;
+  text-align: center;
+}
+
+#fullpage footer .bottom .cy, footer .bottom .cy {
+  text-align: center;
+}

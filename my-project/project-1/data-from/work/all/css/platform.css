@@ -1,0 +1,62 @@
+html {
+  padding-top: 70px;
+}
+
+.ht-pt-content .row {
+  margin-right: 0;
+  min-width: 320px;
+  height: 340px;
+  border-bottom: 1px solid #fff;
+}
+
+.ht-pt-content .row:nth-child(2n) {
+  background: rgba(242, 242, 242, 1);
+}
+
+.ht-pt-content .row div[class*=col] {
+  height: 340px;
+}
+
+/*栅格系统垂直居中*/
+
+.ht-pt-content .row .center-vertical {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ht-pt-content .row .center-vertical img {
+  margin: auto;
+}
+
+.ht-pt-content .row .center-vertical h2 {
+  margin-top: 0;
+  color: #333;
+  font-weight: 600;
+}
+
+.ht-pt-content .row .center-vertical p {
+  color: #97a5a6;
+}
+
+@media (min-width: 992px) {
+  .ht-pt-content .row .container {
+    width: 980px;
+  }
+}
+
+@media (min-width: 475px) and (max-width: 768px) {
+  .ht-pt-content .row .center-vertical h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 475px) {
+  .ht-pt-content .row .center-vertical h2 {
+    font-size: 18px;
+  }
+
+  .ht-pt-content .row .center-vertical p {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,128 @@
+html {
+  padding-top: 80px;
+}
+
+.ht-event-describe {
+  height: 25px;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+  -ms-transition: height .5s;
+  -o-transition: height .5s;
+  transition: height .5s;
+}
+
+.item:hover .ht-event-describe {
+  height: 66px;
+}
+
+.ht-mt {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+}
+
+.ht-event-content {
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.ht-event-content .item {
+  margin: 5px;
+}
+
+@media (max-width: 496px) {
+  .ht-event-content {
+    justify-content: center;
+  }
+
+  .ht-eventcontent-nav ul li {
+    display: inline-block;
+    width: 50px;
+    font-size: 14px;
+    list-style: none;
+  }
+}
+
+.ht-event-content img {
+  width: 218px;
+  height: 140px;
+}
+
+.ht-event-content a {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 130px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.ht-event-content .item .ht-force-number {
+  position: absolute;
+  right: 2px;
+}
+
+.ht-event-content .item .ht-event-describe {
+  position: absolute;
+  margin-bottom: 0;
+  padding: 3px;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.ht-pagination {
+  margin: 0 auto;
+}
+
+.ht-pagination span {
+  cursor: pointer;
+}
+
+.ht-event-influence {
+  position: absolute;
+  top: -70px;
+  right: 0px;
+  width: 70px;
+  height: 70px;
+  -webkit-transition: top .5s;
+  -moz-transition: top .5s;
+  -ms-transition: top .5s;
+  -o-transition: top .5s;
+  transition: top .5s;
+}
+
+.item:hover .ht-event-influence {
+  top: 0px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 87%;
+  }
+
+  .ht-event-content .item {
+    margin: 0.5%;
+    width: 19%;
+  }
+
+  .ht-event-content img {
+    width: 100%;
+    height: 140px;
+  }
+
+}
+
+.nav a,
+#pagination>li a{
+  transition: all 1s ease;
+  cursor: pointer;
+}

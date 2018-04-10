@@ -1,0 +1,347 @@
+html {
+  padding-top: 70px;
+}
+
+body {
+  min-width: 1100px;
+  background-color: rgb(244, 244, 244);
+}
+
+.ht-analysis-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding-left: 2.5%;
+  width: 100%;
+}
+
+.ht-time {
+  font-size: 16px;
+  color: #ccc;
+}
+
+/*screen width > 1200px*/
+.ht-chart-left {
+  flex: 0 0 30%;
+}
+
+.ht-chart-left a {
+  text-decoration: none;
+}
+
+.ht-chart-pia {
+  flex: 0 0 48%;
+  height: 300px;
+  padding: 20px 0 0 50px;
+  background-color: #ffffff;
+}
+
+.ht-chart-left h3 {
+  font-size: 18px;
+}
+
+.ht-chart-left > div {
+  padding: 30px 50px 0px 50px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.ht-chart-left .ht-hot-f {
+  height: 300px;
+}
+
+.ht-chart-left .ht-gauge {
+  width: 100%;
+  height: 130px;
+  font-size: 30px;
+  font-family: YaheiLight;
+}
+
+.ht-chart-left .ht-gauge span:nth-child(2) {
+  float: right;
+}
+
+#ht-hot {
+  color: #ffa29f;
+}
+
+#ht-influnce {
+  color: #12d0ff;
+}
+
+.ht-chart-left .ht-gauge > div {
+  position: relative;
+  border-radius: 5px;
+  margin: 30px auto;
+  width: 90%;
+  height: 10px;
+  overflow: hidden;
+  background-color: rgb(229, 229, 229);
+}
+
+.ht-chart-left .ht-gauge > div > div {
+  position: absolute;
+  border-radius: 5px;
+  width: 100%;
+  height: 10px;
+  -webkit-transition: left .5s;
+  -moz-transition: left .5s;
+  -ms-transition: left .5s;
+  -o-transition: left .5s;
+  transition: left .5s;
+}
+
+#ht-gauge-hot {
+  left: -100%;
+  background-color: #ffa29f;
+}
+
+#ht-gauge-influ {
+  left: -100%;
+  background-color: #00ccff;
+}
+
+.ht-chart-pia .ht-pia {
+  width: 100%;
+  height: 280px;
+}
+
+.ht-cloud:before, .ht-pia:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 8px;
+  height: 27px;
+  margin-left: -20px;
+  background: #2c877b;
+}
+
+.ht-chart-left > div:last-child {
+  margin-top: 20px;
+  min-height: 569px;
+}
+
+.ht-chart-left > div:last-child > div {
+  width: 100%;
+  text-align: inherit;
+}
+
+.ht-chart-left > div:last-child > div:first-child {
+  border-top: 1px solid #ffffff;
+}
+
+.ht-chart-left > div:last-child > div > h3 > small {
+  float: right;
+}
+
+.ht-chart-left > div:last-child > div:not(:first-child) {
+  border-top: 1px solid #cccccc;
+}
+
+.ht-chart-left .ht-tag {
+  min-height: 80px;
+}
+
+.ht-chart-left .ht-source {
+  min-height: 80px;
+}
+
+.ht-source a, .ht-likes a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
+}
+
+.ht-source a:hover {
+  font-weight: bold;
+}
+
+.ht-likes a:hover {
+  font-weight: bold;
+}
+
+.ht-chart-left .ht-likes {
+  min-height: 80px;
+}
+
+.ht-chart-left .ht-tag p,
+.ht-chart-left .ht-source p,
+.ht-chart-left .ht-likes p {
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+.ht-right {
+  flex: 1;
+  margin: 0px 2.5% 10px 20px;
+  width: 60%;
+  background-color: #ffffff;
+}
+
+.ht-top {
+  padding-top: 30px;
+}
+
+.ht-top h1 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 26px;
+}
+
+.ht-line {
+  flex: 1;
+  width: 100%;
+  min-height: 650px;
+  padding: 15px;
+}
+
+.ht-top > div {
+  margin: 30px auto;
+  padding: 25px 8%;
+  border-radius: 5px;
+  width: 90%;
+  max-height: 120px;
+  background-color: #f4f4f4;
+}
+
+.ht-top > div > span:last-child {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5%;
+  width: 85%;
+  max-height: 60px;
+  overflow: hidden;
+}
+
+.ht-chart-right {
+  flex: 1;
+  margin: 0 2.5% 0 20px;
+  padding: 20px 0 0px 50px;
+  width: 44%;
+  height: 300px;
+  background-color: #ffffff;
+}
+
+.ht-chart-right .ht-cloud {
+  width: 100%;
+  height: 280px;
+}
+
+.ht-word {
+  margin: 20px 2.5% 0 0;
+  padding: 50px 2% 0 2%;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.ht-word h3 {
+  margin: 0 auto;
+  width: 100px;
+}
+
+.ht-word ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.ht-word ul li {
+  position: relative;
+  padding: 20px;
+  margin-top: 20px;
+  width: 50%;
+  min-height: 300px;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.ht-word ul li:first-child {
+  padding-right: 200px;
+  background-color: #fff5f5;
+}
+
+.ht-word ul li:first-child:after {
+  content: "正";
+  position: absolute;
+  right: 0;
+  top: 20%;
+  padding-top: 45px;
+  border-top: 15px solid #ffcecd;
+  border-left: 15px solid #ffcecd;
+  border-bottom: 15px solid #ffcecd;
+  border-radius: 115px 0 0 115px;
+  width: 100px;
+  height: 200px;
+  font-size: 50px;
+  font-weight: 100;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  background-color: #ff9e9d;
+}
+
+.ht-word ul li:last-child:before {
+  content: "负";
+  position: absolute;
+  left: 0;
+  top: 20%;
+  padding-top: 45px;
+  border-top: 15px solid #e8ecff;
+  border-right: 15px solid #e8ecff;
+  border-bottom: 15px solid #e8ecff;
+  border-radius: 0 115px 115px 0;
+  width: 100px;
+  height: 200px;
+  font-size: 50px;
+  font-weight: 100;
+  text-align: center;
+  vertical-align: middle;
+  color: #000000;
+  background-color: #d2d9ff;
+}
+
+.ht-word ul li:last-child {
+  padding-left: 200px;
+  background-color: #fafbff;
+}
+
+.ht-word ul span {
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: top;
+  width: 35px;
+  font-size: 20px;
+  color: #03ccff;
+}
+
+.ht-word ul p {
+  font-size: 16px;
+  color: #b5b5b5;
+}
+
+.ht-to-comment {
+  margin: 0 auto 30px auto;
+  width: 80px;
+  height: 26px;
+}
+
+.ht-to-comment .btn {
+  padding: 2px 12px;
+}
+
+.ht-newword {
+  box-sizing: border-box;
+  margin: 20px 2.5% 60px 0;
+  padding: 10px;
+  width: 100%;
+  min-height: 450px;
+  background: #ffffff;
+}
+
+.ht-newword > div {
+  width: 100%;
+  height: 450px;
+}
